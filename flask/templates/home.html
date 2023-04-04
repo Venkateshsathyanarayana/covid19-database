@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - Vaccine Records</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 40px;
+			background-color: #fff;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+			text-align: center;
+			color: #3c8dbc;
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		li {
+			margin-bottom: 10px;
+			margin-right: 20px;
+		}
+
+		a {
+			display: block;
+			padding: 10px;
+			background-color: #3c8dbc;
+			color: #fff;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: background-color 0.2s;
+		}
+
+		a:hover {
+			background-color: #1c758d;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 40px;
+		}
+
+		.med-img {
+			display: block;
+			margin: 0 auto;
+			max-width: 300px;
+			height: auto;
+			margin-bottom: 40px;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to Vaccine Records</h1>
+		<p>Please use the links below to access our services:</p>
+		<ul>
+			<li><a href="{{ url_for('search') }}">Search for Vaccine Record</a></li>
+			<li><a href="{{ url_for('register') }}">Register Vaccine Record</a></li>
+		</ul>
+		
+	        <p>COVID-19 is a highly contagious viral disease caused by the SARS-CoV-2 virus. The best way to protect yourself and others from COVID-19 is by getting vaccinated. Vaccination is critical in helping to reduce the spread of COVID-19 and achieve herd immunity, which is when enough people in a population have immunity that it is difficult for the disease to spread. Vaccination is particularly important for those at higher risk of severe illness from COVID-19, such as the elderly, those with underlying health conditions, and healthcare workers.</p>
+
+	<p>Vaccine Records is a platform that provides reliable, accurate and up-to-date information about COVID-19 vaccination. We believe that access to accurate information is a fundamental human right and that by providing high-quality information about COVID-19 vaccination, we can help bridge the gap between those who might have reservations about vaccination and those who are in favor of it. Our goal is to empower individuals with the knowledge and resources they need to make informed decisions about their health and the health of those around them.</p>
+
+	<p>Our platform also provides users with the opportunity to access their own vaccine records, register for new vaccines, and receive reminders when it's time to get vaccinated. We recognize that it's important to maintain privacy and security when handling sensitive health information, and we take this responsibility very seriously. All user data is encrypted and securely stored, and we adhere to all relevant data privacy regulations.</p>
+
+	</div>
+</body>
+</html>

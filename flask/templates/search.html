@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search for Vaccine Record</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+		h1 {
+			text-align: center;
+			color: #333333;
+		}
+		form {
+			margin: 0 auto;
+			max-width: 500px;
+			background-color: #ffffff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			color: #333333;
+		}
+		input[type="text"] {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #ffffff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.message {
+			color: #333333;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Search for Vaccine Record</h1>
+	<form method="POST" action="{{ url_for('search') }}">
+		<label for="aadhaar_number">Enter 6-digits Aadhaar Number:</label>
+		<input type="text" id="aadhaar_number" name="aadhaar_number" required><br><br>
+		<input type="submit" value="Search">
+	</form>
+	{% if message %}
+	
+	<p class="message">{{ message }}</p>
+	<script>window.location.href = "{{ url_for('home') }}";</script>
+	
+	{% endif %}
+	<!-- Place this tag where you want the JavaScript to run-->
+
+</body>
+</html>
+
